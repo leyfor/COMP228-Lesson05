@@ -1,10 +1,10 @@
 // Super that we'll use for this example
 public class Person {
-    private String _name;
-    private int _age;
-    private String _gender;
-    private double _heightInInches;
-    private double _massInPounds;
+    protected String _name;
+    protected int _age;
+    protected String _gender;
+    protected double _heightInInches;
+    protected double _massInPounds;
     public Person() {
 
     }
