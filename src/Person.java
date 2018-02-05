@@ -2,14 +2,14 @@
 public class Person {
     private String _name;
     private int _age;
-    private int _gender;
+    private String _gender;
     private double _heightInInches;
     private double _massInPounds;
     public Person() {
 
     }
 
-     Person(String name, int age, int gender, double height, double massInPounds) {
+     Person(String name, int age, String gender, double height, double massInPounds) {
         this._name = name;
         this._age = age;
         this._gender = gender;
@@ -28,7 +28,7 @@ public class Person {
     }
 
     // THE ACCESSOR METHOD FOR GENDER
-    public int getGender() {
+    public String getGender() {
         return this._gender;
     }
 

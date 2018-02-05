@@ -4,6 +4,11 @@ public class Program {
 
     // MAIN STATIC METHOD
     public static void main(String[] args) {
-        System.out.println("Hello there");
+     Resident resident = new Resident("Tim", 25, "male", 5.7, 8.4, "x23490000y");
+     resident.setAddress("35", "Main Street", "Madrid", "Madrid");
+        System.out.println(resident.getAddress());
+
+        resident.eats();
+
     }
 }

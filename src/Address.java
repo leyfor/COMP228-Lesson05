@@ -22,10 +22,10 @@ public class Address {
     @Override
     public String toString() {
         return "Address{" +
-                "_streetNumber='" + this._streetNumber + '\'' +
-                ", _streetName='" + this._streetName + '\'' +
-                ", _cityName='" + this._cityName + '\'' +
-                ", _provinceName='" + this._provinceName + '\'' +
+                "streetNumber='" + this._streetNumber + '\'' +
+                ", streetName='" + this._streetName + '\'' +
+                ", cityName='" + this._cityName + '\'' +
+                ", provinceName='" + this._provinceName + '\'' +
                 '}';
     }
 }
