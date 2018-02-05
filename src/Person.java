@@ -9,7 +9,7 @@ public class Person {
 
     }
 
-    public Person(String name, int age, int gender, double height, double massInPounds) {
+     Person(String name, int age, int gender, double height, double massInPounds) {
         this._name = name;
         this._age = age;
         this._gender = gender;
@@ -17,36 +17,43 @@ public class Person {
         this._massInPounds = massInPounds;
     }
 
-    public String get_name() {
-        return _name;
+    // THE ACCESSOR METHOD FOR NAME
+    public String getName() {
+        return this._name;
     }
 
-    public int get_age() {
-        return _age;
+    // THE ACCESSOR METHOD FOR AGE
+    public int getAge() {
+        return this._age;
     }
 
-    public int get_gender() {
-        return _gender;
+    // THE ACCESSOR METHOD FOR GENDER
+    public int getGender() {
+        return this._gender;
     }
 
-    public double get_heightInInches() {
-        return _heightInInches;
+    // THE ACCESSOR METHOD FOR HEIGHT
+    public double getHeightInInches() {
+        return this._heightInInches;
     }
 
-    public double get_massInPounds() {
-        return _massInPounds;
+    // THE ACCESSOR METHOD MASS
+    public double getMassInPounds() {
+        return this._massInPounds;
     }
 
-    // PUBLIC METHOD
+    // PUBLIC EVENT METHOD
 
     public void eats() {
         System.out.println(this._name + " is eating");
     }
 
+    // PUBLIC EVENT METHOD
     public void walks() {
         System.out.println(this._name + " is walking");
     }
 
+    // PUBLIC EVENT METHOD
     public void talks() {
         System.out.println(this._name + " is talking");
     }
