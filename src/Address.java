@@ -6,6 +6,7 @@ public class Address {
     private String _streetName;
     private String _cityName;
     private String _provinceName;
+    private boolean _hasChanged = false;
 
     // CONSTRUCTOR ....
     Address() {
@@ -13,19 +14,42 @@ public class Address {
     }
 
      Address(String streetNumber, String streetName, String cityName, String province) {
+         this._set(streetNumber, streetName, cityName,  province);
+    }
+
+    @Override
+    public String toString() {
+        String output = "";
+        if(this._hasChanged) {
+            output +=   "New Address: \n";
+
+        } else {
+
+            output +=   "Address: \n";
+
+
+        }
+        output +=  "+++++++++++++++++++++++++++++ \n";
+        output +=  this._streetNumber + ", " + this._streetName + "\n";
+        output += this._cityName + ", " + this._provinceName + "\n";
+
+
+
+
+        return output;
+    }
+
+    public void change(String streetNumber, String streetName, String cityName, String province) {
+      this._set(streetNumber, streetName, cityName,  province);
+      this._hasChanged = true;
+    }
+
+    private void _set(String streetNumber, String streetName, String cityName, String province) {
         this._streetNumber = streetNumber;
         this._streetName = streetName;
         this._cityName = cityName;
         this._provinceName = province;
     }
 
-    @Override
-    public String toString() {
-        return "Address{" +
-                "streetNumber='" + this._streetNumber + '\'' +
-                ", streetName='" + this._streetName + '\'' +
-                ", cityName='" + this._cityName + '\'' +
-                ", provinceName='" + this._provinceName + '\'' +
-                '}';
-    }
+
 }
