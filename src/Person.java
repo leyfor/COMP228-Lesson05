@@ -1,5 +1,5 @@
 // Super that we'll use for this example
-public class Person {
+public abstract class Person {
     protected String _name;
     protected int _age;
     protected String _gender;
