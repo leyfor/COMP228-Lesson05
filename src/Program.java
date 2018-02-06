@@ -14,7 +14,9 @@ public class Program {
         System.out.println(student.getAddress());
 
         student.addCourse("COMP101", "Programming fundamental", "First Computer Course", 600.35);
-
+        student.addCourse("COMP102", "Programming Designs", "First UME Course", 600.35);
+       // student.dropCourse("Programming Designs");
+       // student.dropCourse("Programming fundamental");
         System.out.println(student.toString());
 
     }

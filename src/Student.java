@@ -19,13 +19,24 @@ public class Student extends Resident {
     }
 
     public void dropCourse(String courseName) {
+        int index = -1;
         for (Course course : this._courses) {
-            if(course.getCourseName().equals(courseName)) {
-               // boolean index = _courses.contains(courseName);
-                this._courses.remove(course);
+            if(course.getCourseName() == courseName) {
+                index  = this._courses.indexOf(course);
+                System.out.println(course.getCourseName());
+
             }
 
         }
+
+
+        if (index >= 0) {
+            this._courses.remove(index);
+        }
+
+
+         //boolean index = _courses.contains(courseName);
+       //this._courses.remove(this._courses.contains(courseName));
 
     }
 
@@ -35,7 +46,7 @@ public class Student extends Resident {
         output += "Student Name: " + this._name + " Student ID: " + this._studentID + "\n";
         if (this._courses.size() > 0) {
             output += "Courses: \n";
-            output += "+++++++++++++++++++++";
+            output += "+++++++++++++++++++++\n";
             for ( Course course : this._courses) {
                 output += course.getCourseName() + "\n";
 
